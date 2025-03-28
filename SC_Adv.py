@@ -1,5 +1,4 @@
-#shopping cart program
-# simple understanding for the complex project
+
 import random
 foods = []
 quantity = []
@@ -42,20 +41,20 @@ while True:
                 break
 
 
-# Bill Number.
+
 bill_number = random.randint(1000, 9999)
 print(f"\033[1;31;107m{'Bill Number: ':30}{bill_number:<7}\033[0m")
-# Header of Bill.
+
 header = "\033[1;31;107m____________ Your  Cart _____________\033[0m"
 print(header.center(bill_width))
-#Bill Column Header.
+
 print(f"\033[1;31;107m{'Food':<15}|{'Quantity':<10}|{'Price':<10}\033[0m")
-# Elements of cart.
+
 for food, qty, price in zip(foods, quantity, prices):
     print(f"\033[1;31;107m{food:<15}|{qty:<10}|{int(price):<10}\033[0m")
-# Counting and printing Total amount of cart.
+
 for price in prices:
     total += price
 print(f"\033[1;31;107m{'      Your total is: Rs ':<24}{int(total):<13}\033[0m")
-#End Space
+
 print(f"\033[1;4;31;107m{' ':<37}\033[0m")
