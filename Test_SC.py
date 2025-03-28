@@ -1,5 +1,3 @@
-#shopping cart program
-# simple understanding for the complex project
 
 foods = []
 prices = []
