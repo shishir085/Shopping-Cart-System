@@ -1,4 +1,3 @@
-
 print("\033[30m Black \033[0m")
 print("\033[31m Red \033[0m")
 print("\033[32m Green \033[0m")
